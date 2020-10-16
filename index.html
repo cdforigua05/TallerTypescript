@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Cristhian David Forigua Diaz</h1>
+
+                <img class="img-fluid max-width: 100% height: auto" src="https://scontent-bog1-1.xx.fbcdn.net/v/t1.0-9/82232809_10212316164538618_5858741218908831744_n.jpg?_nc_cat=101&_nc_sid=09cbfe&_nc_ohc=-B9y-uybA-wAX-eSRbZ&_nc_ht=scontent-bog1-1.xx&oh=eab32eb48c6dab493b17517373ba8acb&oe=5FAD5A4C" alt="Avatar">
+                
+                <table class="table" style="border:grey 1px solid;" cellpadding="10" rules="rows">
+                    <thead>
+                        <tr>
+                            <th colspan="2">
+                                <h5>Datos Personales</h5>
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody style="padding:10px">
+                        <tr style="padding:10px">
+                            <td>Código</td>
+                            <td>201713023</td>
+                        </tr>
+                        <tr>
+                            <td>Cédula</td>
+                            <td>1007368561</td>
+                        </tr style="padding:10px">
+                        <tr>
+                            <td>Edad</td>
+                            <td>20 Años</td>
+                        </tr>
+                        <tr style="padding:10px">
+                            <td>Dirección</td>
+                            <td>Calle 25#32a-41</td>
+                        </tr>
+                        <tr style="padding:10px">
+                            <td>Teléfono</td>
+                            <td>3227099931</td>
+                        </tr>
+                    </tbody>    
+                </table>
+            </div>
+            <div class="col">
+                <form style="margin:10px;">
+                    <div class="form-row">
+                      <div class="col">
+                          <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
+                      </div>
+                      <div class="col">
+                          <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                      </div>
+                    </div>
+                </form>
+                <table class="table" style="border:grey 1px solid; padding:15px; margin: 15px;" rules="rows">
+                    <thead class="thead-dark">
+                       <tr>
+                          <th>Curso</th>
+                          <th>Profesor</th>
+                          <th>Créditos</th>
+                       </tr>
+                    </thead>
+                    <tbody id="courses">
+                    </tbody>
+            </div>
+        </div>
+    </div>  
+    <script type="module" src="./scripts/course.js" ></script>
+    <script type="module" src="./scripts/dataCourses.js" ></script>
+    <script type="module" src="./scripts/main.js"></script>  
+</body>
+</html>
