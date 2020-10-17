@@ -21,29 +21,9 @@
                                 <h5>Datos Personales</h5>
                             </th>
                             
-                        </tr>
+                        </tr>   
                     </thead>
-                    <tbody style="padding:10px">
-                        <tr style="padding:10px">
-                            <td>Código</td>
-                            <td>201713023</td>
-                        </tr>
-                        <tr>
-                            <td>Cédula</td>
-                            <td>1007368561</td>
-                        </tr style="padding:10px">
-                        <tr>
-                            <td>Edad</td>
-                            <td>20 Años</td>
-                        </tr>
-                        <tr style="padding:10px">
-                            <td>Dirección</td>
-                            <td>Calle 25#32a-41</td>
-                        </tr>
-                        <tr style="padding:10px">
-                            <td>Teléfono</td>
-                            <td>3227099931</td>
-                        </tr>
+                    <tbody id="info">
                     </tbody>    
                 </table>
             </div>
@@ -54,8 +34,20 @@
                           <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
                       </div>
                       <div class="col">
-                          <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                          <button type="button" id="button-filterByName" class="btn btn-success">Filtrar por nombre</button>
                       </div>
+                    </div>
+                    <div class="form-row">.</div>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="search-box_inf" placeholder="Límite inferior">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="search-box_sup" placeholder="Límite superior">
+                        </div>
+                        <div class="col">
+                            <button type="button" id="button-filterByCred" class="btn btn-success">Filtrar por créditos</button>
+                        </div>
                     </div>
                 </form>
                 <table class="table" style="border:grey 1px solid; padding:15px; margin: 15px;" rules="rows">
